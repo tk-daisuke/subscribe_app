@@ -1,0 +1,33 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "subscribes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "isEnable",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "unitNumber",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "subscribes",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "unit",
+          "arrayConfig": "CONTAINS"
+        },
+        {
+          "fieldPath": "unitValue",
+          "order": "ASCENDING"
+        }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

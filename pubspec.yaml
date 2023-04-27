@@ -1,0 +1,97 @@
+name: bom_app
+description: A new Flutter application.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.6
+
+environment:
+  sdk: ">=2.13.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  #icons
+  cupertino_icons: ^1.0.2
+  #analysis_options.yaml
+  #pedantic_mono: any #https://pub.dev/packages/pedantic_mono
+  #Firebase
+  firebase_core: ^1.8.0 #https://pub.dev/packages/firebase_core
+  cloud_firestore: ^2.5.4 #https://pub.dev/packages/cloud_firestore
+  firebase_analytics: ^8.1.2 #https://pub.dev/packages/firebase_analytics/example
+  google_mobile_ads: ^0.13.2 #https://pub.dev/packages/google_mobile_ads
+  #auth
+  firebase_auth: ^3.1.4 #https://pub.dev/packages/firebase_auth
+  # flutter_signin_button: ^2.0.0 #https://pub.dev/packages/flutter_signin_button
+  validators: ^3.0.0 #https://pub.dev/packages/validators
+  # google_sign_in: ^5.0.4 #https://pub.dev/packages/google_sign_in
+
+  #Widget
+  auto_size_text: ^3.0.0-nullsafety.0 #https://pub.dev/packages/auto_size_text
+  flutter_easyloading: ^3.0.0 #https://pub.dev/packages/flutter_easyloading
+  package_info: ^2.0.2 #https://pub.dev/packages/package_info/install  
+  animated_text_kit: ^4.2.1 #https://pub.dev/packages/animated_text_kit/example
+
+  #State Management  
+  provider: ^5.0.0  #https://pub.dev/packages/provider
+  #Library
+  intl: ^0.17.0 #https://pub.dev/packages/intl
+  jiffy: ^4.1.0 #https://pub.dev/packages/jiffy
+  # date_time_format: ^2.0.1 #https://pub.dev/packages/date_time_format/install
+  timeago: ^3.1.0 #https://pub.dev/packages/timeago/install
+  google_fonts: ^2.1.0 #https://pub.dev/packages/google_fonts/example
+  url_launcher: ^6.0.7
+  #app_tracking_transparency用
+  app_tracking_transparency: ^2.0.1 #https://pub.dev/packages/app_tracking_transparency/install
+  #、iOSのpackage_infoでは、のバージョン文字列を変更した後、Xcodeビルドフォルダーを再ビルドする必要があります
+  # pubspec.yaml。Xcodeビルドフォルダを次のコマンドでクリーンアップします XCode Menu -> Product -> (Holding Option Key) Clean build folder。
+  package_info_plus: ^1.0.3 #https://pub.dev/packages/package_info_plus
+  #version同士を比較できる
+  pub_semver: ^2.0.0 #https://pub.dev/packages/pub_semver
+  flutter_progress_hud: ^2.0.0
+  auto_animated: ^3.0.0
+
+dev_dependencies:
+  integration_test:
+    sdk: flutter
+  flutter_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+
+  flutter_native_splash: ^1.2.0 #https://pub.dev/packages/flutter_native_splash/install
+  simple_logger: ^1.8.1 #https://pub.dev/packages/simple_logger
+  # mockito: ^5.0.10
+  # fake_cloud_firestore: ^1.1.2 #https://pub.dev/packages/fake_cloud_firestore
+  # firebase_auth_mocks: ^0.8.0 #https://pub.dev/packages/firebase_auth_mocks
+  # google_sign_in_mocks: ^0.2.1 #https://pub.dev/packages/google_sign_in_mocks
+
+    
+flutter:
+  uses-material-design: true
+
+
+
+  assets:
+    - assets/images/
+
+
+  fonts:
+    - family: Robot
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+
+    - family: Saira
+      fonts:
+        - asset: assets/fonts/Saira-Regular.ttf
+
+    - family: NotoSansJP
+      fonts:
+        - asset: assets/fonts/NotoSansJP-Regular.otf
+        - asset: assets/fonts/NotoSansJP-Bold.otf
+  
+flutter_native_splash:
+  image: "assets/images/splash.png"
+  color: "#0061D5"
+
